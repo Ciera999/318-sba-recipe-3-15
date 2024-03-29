@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Add New Recipe
+  body
+    h1 Add New Recipe
+    form(action='/recipes', method='POST')
+      label(for='title') Title:
+      input(type='text', name='title')
+      br
+      label(for='description') Description:
+      textarea(name='description')
+      br
+      label(for='ingredients') Ingredients:
+      textarea(name='ingredients')
+      br
+      label(for='instructions') Instructions:
+      textarea(name='instructions')
+      br
+      button(type='submit') Submit

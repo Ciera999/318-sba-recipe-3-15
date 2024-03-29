@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Recipe Sharing Tree
+    link(rel='stylesheet', href='/styles.css')
+  body
+    h1 Recipe Sharing Tree
+    ul
+      each recipe in recipes
+        li
+          a(href=`/recipes/${recipe.id}`)= recipe.title
+    hr
+    a(href='/recipes/add') Add New Recipe
